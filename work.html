@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How this was made - Ayush's About Me</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="wrap">
+<nav><a href="index.html">About me</a><a class="here" href="work.html">How this was made</a><a href="https://github.com/ayush-mania/fredrin-ayush-portfolio">The repo</a></nav>
+
+<header class="hero">
+<h1>How this was made 🛠️</h1>
+<p>One page about me, built from a chain of small tickets. This page is the receipt: what was done, why, and how.</p>
+</header>
+
+<h2>The whole thing at a glance</h2>
+<div class="cards">
+<div class="card"><h3>What</h3><p>A friendly About Me page, plus this page explaining the work.</p></div>
+<div class="card"><h3>Why</h3><p>To submit to the Fredrin team for the FDE requirements, with proof of how the work was planned and done.</p></div>
+<div class="card"><h3>How</h3><p>Plain HTML and CSS (no tools to install), facts copied only from the <code>data/</code> folder, hosted free on GitHub Pages.</p></div>
+</div>
+
+<h2>The ticket chain</h2>
+<p>Each ticket hands its result to the next one. Arrows show what gets passed along.</p>
+<ol class="steps">
+<li><strong>Collect the facts about me</strong> <span class="tag">done</span>
+<span class="arrow">Why: so the page never invents anything. How: copied identity, jobs, school and projects from my main portfolio into <code>data/owner.json</code> and <code>data/projects.json</code>. Shipped in PR #2.</span>
+<span class="arrow">→ hands the facts to ticket 2</span></li>
+<li><strong>Build the About Me page and this page</strong> <span class="tag">done - this ticket (FRED-90O8S7)</span>
+<span class="arrow">Why: it's the main thing to submit. How: wrote <code>index.html</code>, <code>work.html</code> and <code>assets/style.css</code> by hand, with a casual look (warm colours, rounded boxes, a waving hand) instead of anything futuristic. Left out the unverified TestDino numbers.</span>
+<span class="arrow">→ hands the finished files to ticket 3</span></li>
+<li><strong>Put it online</strong> <span class="tag warn">needs you</span>
+<span class="arrow">Why: the Fredrin team needs a link, not files. How: GitHub Pages serves the files straight from this public repo. One setting must be switched on by the repo owner: Settings → Pages → Deploy from branch → <code>main</code> / root.</span>
+<span class="arrow">→ hands the live links to ticket 4</span></li>
+<li><strong>Check both pages and share the two links</strong> <span class="tag warn">planned</span>
+<span class="arrow">Why: to make sure the links work for a stranger. How: open each link on desktop and phone, fix anything broken, then send the two links.</span></li>
+<li><strong>Learn how Fredrin really works</strong> <span class="tag warn">planned</span>
+<span class="arrow">Why: you've seen the core and want to use more of it. How: a research-only ticket that reads Fredrin's own docs and writes a plain-language guide: goals, ticket dependencies, Project Context, approval gates, and workflows. Output: one short guide, no code.</span></li>
+</ol>
+
+<h2>Honest notes</h2>
+<ul>
+<li>Tickets 3-5 are planned here but not yet created or run in Fredrin. The worker for this ticket could not create new tickets itself.</li>
+<li>Nothing is live until GitHub Pages is switched on.</li>
+<li>The page uses no tracking, no scripts and no outside fonts.</li>
+</ul>
+
+<h2>The two links</h2>
+<div class="cards">
+<div class="card"><h3>👀 What was built</h3><p><a href="https://ayush-mania.github.io/fredrin-ayush-portfolio/">ayush-mania.github.io/fredrin-ayush-portfolio</a></p></div>
+<div class="card"><h3>🧭 How it was done</h3><p><a href="https://ayush-mania.github.io/fredrin-ayush-portfolio/work.html">…/work.html</a> (this page)</p></div>
+</div>
+
+<footer><a href="index.html">← Back to About me</a></footer>
+</div>
+</body>
+</html>

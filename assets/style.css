@@ -1,0 +1,28 @@
+:root{--paper:#fff8ec;--ink:#2b2433;--pink:#ff8fab;--yellow:#ffd166;--mint:#7fd8be;--sky:#8ecae6;--card:#ffffff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Comic Neue","Trebuchet MS","Segoe UI",sans-serif;font-size:18px;line-height:1.6}
+a{color:var(--ink);text-decoration-color:var(--pink);text-decoration-thickness:3px;text-underline-offset:3px}
+a:hover{background:var(--yellow)}
+.wrap{max-width:860px;margin:0 auto;padding:24px 20px 60px}
+nav{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px}
+nav a{border:2.5px solid var(--ink);border-radius:999px;padding:4px 16px;text-decoration:none;background:var(--card);font-weight:700;box-shadow:3px 3px 0 var(--ink)}
+nav a.here{background:var(--yellow)}
+h1{font-size:2.6rem;line-height:1.15;margin:.2em 0}
+h2{font-size:1.6rem;margin:1.6em 0 .5em;display:inline-block;background:var(--yellow);padding:0 12px;border-radius:8px;transform:rotate(-1deg)}
+.hero{background:var(--pink);border:3px solid var(--ink);border-radius:22px;padding:28px;box-shadow:6px 6px 0 var(--ink)}
+.hero p{margin:.4em 0}
+.wave{display:inline-block;animation:wave 2s ease-in-out infinite;transform-origin:70% 70%}
+@keyframes wave{0%,60%,100%{transform:rotate(0)}10%,30%{transform:rotate(14deg)}20%,40%{transform:rotate(-8deg)}50%{transform:rotate(10deg)}}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.card{background:var(--card);border:2.5px solid var(--ink);border-radius:16px;padding:16px 18px;box-shadow:4px 4px 0 var(--ink)}
+.card:nth-child(3n+1){background:#e8f7f1}.card:nth-child(3n+2){background:#e6f3fa}
+.card h3{margin:.1em 0 .3em;font-size:1.15rem}
+.tag{display:inline-block;font-size:.8rem;font-weight:700;border:2px solid var(--ink);border-radius:999px;padding:0 10px;background:var(--yellow)}
+.tag.warn{background:var(--pink)}
+.links a{display:inline-block;margin:4px 8px 4px 0}
+ol.steps{padding-left:0;list-style:none;counter-reset:s}
+ol.steps li{counter-increment:s;position:relative;margin:14px 0;padding:14px 16px 14px 62px;background:var(--card);border:2.5px solid var(--ink);border-radius:16px;box-shadow:4px 4px 0 var(--ink)}
+ol.steps li::before{content:counter(s);position:absolute;left:14px;top:12px;width:34px;height:34px;border-radius:50%;background:var(--mint);border:2.5px solid var(--ink);text-align:center;line-height:30px;font-weight:700}
+ol.steps li .arrow{display:block;font-size:.85rem;opacity:.75}
+footer{margin-top:50px;font-size:.9rem;opacity:.8}
+@media (prefers-reduced-motion:reduce){.wave{animation:none}}

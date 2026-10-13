@@ -4,9 +4,14 @@ Ayush Mania's personal portfolio.
 
 ## Status
 
-The repository is at its initial commit: it contains only this README. There is
-no application code, package manifest, or build tooling yet, so there is nothing
-to install or run. Update this file when the site's stack is added.
+A hand-written static site: `index.html` (About Me), `work.html` (how it was
+made, in plain language), `assets/style.css`. No build step, no dependencies.
+
+Live links (once GitHub Pages is enabled: Settings -> Pages -> Deploy from
+branch `main`, folder `/ (root)`):
+
+- What was built: https://ayush-mania.github.io/fredrin-ayush-portfolio/
+- How it was done: https://ayush-mania.github.io/fredrin-ayush-portfolio/work.html
 
 ## Content
 
@@ -28,9 +33,8 @@ cd fredrin-ayush-portfolio
 
 ## Install and run locally
 
-Not applicable yet — no dependencies or start command exist. When code lands,
-document here:
+No install needed. Open `index.html` in a browser, or serve the folder:
 
-- prerequisites (runtime and version)
-- the install command
-- the command that starts the local dev server, and the URL it serves on
+```sh
+python3 -m http.server 8000   # then visit http://localhost:8000
+```
