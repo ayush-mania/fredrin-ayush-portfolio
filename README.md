@@ -1,50 +1,61 @@
 # fredrin-ayush-portfolio
 
-Ayush Mania's personal portfolio.
+A small, hand-written portfolio site for **Ayush Mania** (forward deployed
+engineer and platform architect), built as a Fredrin project for an FDE
+application.
 
-## Status
+## Live pages
 
-A hand-written static site: `index.html` (About Me), `work.html` (how it was
-made, in plain language), `assets/style.css`. No build step, no dependencies.
+Both were checked and return HTTP 200 (GitHub Pages, built from `main`):
 
-## Deployment
+| Page | URL |
+|---|---|
+| About Me - who Ayush is, work history, projects | https://ayush-mania.github.io/fredrin-ayush-portfolio/ |
+| How this was made - the ticket chain and honest notes | https://ayush-mania.github.io/fredrin-ayush-portfolio/work.html |
 
-Deployed by GitHub Pages straight from a branch, with no GitHub Actions
-workflow, so it uses no Actions minutes.
+Source repository: https://github.com/ayush-mania/fredrin-ayush-portfolio
 
-- Deploy branch: **`main`**, folder `/ (root)`. It is the only source.
-- Flow: merge a PR into `main` -> Pages publishes the files as-is
-  (`.nojekyll` skips the Jekyll build). Other branches never deploy.
-- One-time setup: Settings -> Pages -> Source: **Deploy from a branch** ->
-  Branch `main`, `/ (root)`. If it was set to "GitHub Actions", switch it.
+The owner's main portfolio (a separate project, not part of this repo) is at
+https://ayush-mania.vercel.app.
 
-Live links (404 until the setup above is done):
+## What is in the repo
 
-- What was built: https://ayush-mania.github.io/fredrin-ayush-portfolio/
-- How it was done: https://ayush-mania.github.io/fredrin-ayush-portfolio/work.html
+| Path | Purpose |
+|---|---|
+| `index.html` | About Me page |
+| `work.html` | Plain-language explanation of how the site was planned and built |
+| `assets/style.css` | Shared stylesheet |
+| `data/owner.json` | Identity, links, intro, experience, education |
+| `data/projects.json` | The six portfolio projects |
+| `.nojekyll` | Tells GitHub Pages to publish the files as-is (no Jekyll) |
 
-## Content
+Plain HTML and CSS. No build step, no dependencies, no JavaScript framework.
+The pages are written by hand; `data/` is the source of facts they draw on.
 
-Owner and project facts live in `data/`, taken from the source portfolio
-repository (https://github.com/ayush-mania/portfolio) and nothing else:
+## Content and sources
 
-- `data/owner.json` - identity, links, intro, experience, education
-- `data/projects.json` - the six portfolio projects
+Owner and project facts come from the source portfolio repository
+(https://github.com/ayush-mania/portfolio) and nothing else. Several TestDino
+figures there are marked unverified or disputed, so `data/projects.json`
+carries that caveat instead of restating them as fact.
 
-Several TestDino figures in the source are marked unverified or disputed there;
-`data/projects.json` carries that caveat rather than restating them as fact.
-
-## Getting the code
-
-```sh
-git clone https://github.com/ayush-mania/fredrin-ayush-portfolio.git
-cd fredrin-ayush-portfolio
-```
-
-## Install and run locally
+## Run locally
 
 No install needed. Open `index.html` in a browser, or serve the folder:
 
 ```sh
+git clone https://github.com/ayush-mania/fredrin-ayush-portfolio.git
+cd fredrin-ayush-portfolio
 python3 -m http.server 8000   # then visit http://localhost:8000
 ```
+
+## Deployment
+
+GitHub Pages deploys straight from a branch, with no GitHub Actions workflow.
+
+- Source: branch **`main`**, folder `/ (root)` (confirmed via the repository's
+  Pages settings).
+- Flow: merge a PR into `main` and Pages republishes. Other branches never
+  deploy.
+- If Pages is ever reset: Settings -> Pages -> Source: **Deploy from a
+  branch** -> `main`, `/ (root)`.
