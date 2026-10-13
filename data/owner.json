@@ -1,0 +1,50 @@
+{
+  "source": "https://github.com/ayush-mania/portfolio (src/resources/content.tsx, PROFILE.md)",
+  "name": "Ayush Mania",
+  "firstName": "Ayush",
+  "lastName": "Mania",
+  "role": "Forward Deployed Engineer & Platform Architect",
+  "email": "ayushmania300@gmail.com",
+  "timeZone": "Asia/Kolkata",
+  "languages": ["English (B1)", "German (A1)"],
+  "portfolioUrl": "https://ayush-mania.vercel.app",
+  "social": [
+    { "name": "GitHub", "url": "https://github.com/ayush-mania" },
+    { "name": "LinkedIn", "url": "https://www.linkedin.com/in/ayushmania/" },
+    { "name": "X", "url": "https://www.x.com/mania_ayush" },
+    { "name": "Email", "url": "mailto:ayushmania300@gmail.com" }
+  ],
+  "calendar": "https://cal.com/ayushmania",
+  "headline": "I Own the Part of the System That Is Expensive to Get Wrong",
+  "subline": "Event ingestion, analytics, money, auth and tenancy, plus the gates and decision records that keep them correct after I move on.",
+  "intro": "I'm Ayush Mania, a forward deployed engineer and platform architect. I work embedded with product teams to solve problems where they happen - designing systems that help businesses scale without losing reliability. My focus spans backend engineering, cloud infrastructure, and applied LLM systems: semantic search, agentic workflows, and the unglamorous plumbing that keeps them honest in production. I turn complex problems into simple, efficient solutions that ship.",
+  "experience": [
+    {
+      "company": "TestDino Inc.",
+      "timeframe": "Jan 2025 - Present",
+      "role": "Forward Deployed Engineer & Product/Platform Architect"
+    },
+    {
+      "company": "Darkark Technologies",
+      "timeframe": "2026",
+      "role": "Engineering Lead, Client Engagements (independent contract)"
+    },
+    {
+      "company": "Alphabin Technology Consulting",
+      "timeframe": "Dec 2023 - Dec 2024",
+      "role": "Backend Engineer"
+    },
+    {
+      "company": "Virtually Testing Foundation",
+      "timeframe": "Jul 2023 - Sep 2023",
+      "role": "Red Team Engineer Intern"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Nirma University",
+      "degree": "Bachelor of Technology in Computer Science and Engineering",
+      "timeframe": "Jun 2020 - Oct 2024"
+    }
+  ]
+}
