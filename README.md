@@ -7,8 +7,10 @@ Ayush Mania's personal portfolio.
 A hand-written static site: `index.html` (About Me), `work.html` (how it was
 made, in plain language), `assets/style.css`. No build step, no dependencies.
 
-Live links (once GitHub Pages is enabled: Settings -> Pages -> Deploy from
-branch `main`, folder `/ (root)`):
+Live links. These return 404 until GitHub Pages is switched on once:
+Settings -> Pages -> Source: **GitHub Actions** (`.github/workflows/pages.yml`
+then publishes every push to `main`). Alternatively choose Deploy from branch
+`main`, folder `/ (root)` and ignore the workflow:
 
 - What was built: https://ayush-mania.github.io/fredrin-ayush-portfolio/
 - How it was done: https://ayush-mania.github.io/fredrin-ayush-portfolio/work.html
