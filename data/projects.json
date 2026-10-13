@@ -1,0 +1,52 @@
+{
+  "source": "https://github.com/ayush-mania/portfolio (src/app/work/projects/*.mdx, src/resources/metrics.json)",
+  "projects": [
+    {
+      "slug": "testdino-test-report-intelligence-platform",
+      "title": "TestDino - AI-Powered Test Intelligence Platform",
+      "publishedAt": "2025-01-15",
+      "role": "Founding Engineer & Architect",
+      "link": "https://www.testdino.com",
+      "summary": "Forward deployed engineering from day one. Architected a SaaS platform for test reporting, observability and test intelligence. Built the backend, led the team, shipped to production.",
+      "metrics": "Portfolio cites 80+ organizations, 130+ engineers and QAs, 2M+ test executions (disputed, unverified) and 99.95%+ uptime (worst of 7 components, trailing 90 days, as of 2026-09-22). Only the uptime figure is verified."
+    },
+    {
+      "slug": "testgenx-execution-engine",
+      "title": "TestGenX - AI-Ready Parallel Test Execution Engine",
+      "publishedAt": "2024-06-15",
+      "role": "Backend Engineer & Architect",
+      "link": "https://www.testgenx.com",
+      "summary": "Built a distributed test execution system from scratch: 200 parallel VMs, 7 hours saved weekly, zero-touch automation (engagement-time figures)."
+    },
+    {
+      "slug": "saral-ai-recruiting-search-platform",
+      "title": "Saral - AI-Powered Recruiting Search Platform",
+      "publishedAt": "2026-02-15",
+      "role": "Platform Architect & Backend Lead",
+      "link": "https://www.saralhire.ai",
+      "summary": "Designed the platform architecture and owned backend, infrastructure and the search data flow. Semantic candidate search over 119k profiles with progressive backfill, LLM fallback and per-page credit billing."
+    },
+    {
+      "slug": "driveline-tco-alternative-drivetrain-comparison",
+      "title": "Driveline TCO - Alternative Drivetrain Comparison & Route Analysis Platform",
+      "publishedAt": "2026-04-15",
+      "role": "Engineering Lead (client engagement)",
+      "summary": "Client engagement for a Munich automotive firm. Structural improvements to a TCO comparison platform spanning seven drivetrain concepts for heavy commercial vehicles: consumption, total cost of ownership, route feasibility. Bilingual UI, deterministic models, delivered ahead of schedule."
+    },
+    {
+      "slug": "testdino-playwright-reporter-and-cli",
+      "title": "@testdino/playwright - Streaming Playwright Results Out of CI",
+      "publishedAt": "2026-09-15",
+      "role": "Principal author and architect",
+      "link": "https://www.npmjs.com/package/@testdino/playwright",
+      "summary": "Client half of a CI test-observability platform, published on npm. A Playwright reporter and CLI that streams each result as it completes, with dual-transport failover, byte-aware batching and a liveness heartbeat. Principal author across nine months alongside five other contributors."
+    },
+    {
+      "slug": "caratos-diamond-manufacturing-operations",
+      "title": "CaratOS - Stone-Level Cost and Journey Tracking for Diamond Manufacturing",
+      "publishedAt": "2026-09-22",
+      "role": "Engineering lead, client engagement",
+      "summary": "Multi-tenant operations platform for a diamond manufacturer, delivered in 21 days. 27 migrations with paired rollbacks, 54 row-level security policies, and an architecture gate that fails the build on a float column in a money schema."
+    }
+  ]
+}
